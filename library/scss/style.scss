@@ -27,14 +27,13 @@ $wrapper-width: 1600px;
 //partials
 @import "partials/normalize";
 @import "partials/variables";
-@import "partials/typography";
 @import "partials/functions";
 @import "partials/mixins";
 @import "partials/grid";
 
 //everything else
+@import "typography";
 @import "buttons";
-@import "forms";
 @import "general";
 @import "links";
 @import "headings";

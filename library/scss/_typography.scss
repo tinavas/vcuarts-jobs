@@ -15,7 +15,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
 
 ******************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,700|Crimson+Text:700italic,700,400italic,400);
+
 
 /*********************
 FONT FACE (IN YOUR FACE)
@@ -50,8 +50,8 @@ I've edited it a bit, but it's a nice starting point.
 
 
 // font stacks
-$sans-serif:        "Ubuntu", Helvetica, Arial, sans-serif;
-$serif:             "Crimson Text", Cambria, Times New Roman, Times, serif;
+$sans-serif:        Helvetica, Arial, sans-serif;
+$serif:             Cambria, Times New Roman, Times, serif;
 
 /*
 some nice typographical defaults
