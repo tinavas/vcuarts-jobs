@@ -9,3 +9,20 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
+.wrap {
+  @include container();
+}
+
+.inner-content, .inner-footer, .inner-header {
+  @include container();
+  overflow: hidden;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.article-footer {
+  overflow: hidden;
+}
