@@ -3,9 +3,9 @@ Site Name: VCUarts
 Author: VCUarts Web Dev Team
 Stylesheet: Main Stylesheet
 ******************************************************************/
-/* =====================
-   NORMALIZE
-====================== */
+/*********************
+NORMALIZE
+*********************/
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -421,20 +421,20 @@ span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic; }
 
-/* =====================
-   VARIABLES
-====================== */
+/*********************
+VARIABLES
+*********************/
 /*
 Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
-/* =====================
-   SASS FUNCTIONS
-====================== */
-/* =====================
-   MIXINS
-====================== */
+/*********************
+SASS FUNCTIONS
+*********************/
+/*********************
+MIXINS
+*********************/
 .clearfix {
   zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -443,9 +443,9 @@ http://sachagreif.com/sass-color-variables/
   .clearfix:after {
     clear: both; }
 
-/* =====================
-   GRID
-====================== */
+/*********************
+GRID
+*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -508,9 +508,9 @@ p {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
 
-/* =====================
-   BUTTONS
-====================== */
+/*********************
+BUTTONS
+*********************/
 .blue-btn {
   display: inline-block;
   position: relative;
@@ -519,40 +519,20 @@ p {
   cursor: pointer; }
   .blue-btn:hover, .blue-btn:focus {
     text-decoration: none; }
-  .blue-btn:active {
-    top: 1px; }
 
-/*
-An example button.
-You can use this example if you want. Just replace all the variables
-and it will create a button dependant on those variables.
-*/
 .blue-btn {
   background-color: #2980b9; }
   .blue-btn:hover,
   .blue-btn:focus {
     background-color: #2574a8; }
-  .blue-btn:active {
-    background-color: #2472a4; }
-
-.ux {
-  border: 3px solid #e96763;
-  border-radius: 100%;
-  cursor: pointer;
-  width: 65px;
-  height: 65px; }
-  .ux svg {
-    cursor: pointer; }
-  .ux:hover {
-    background-color: #e96763; }
 
 /*********************
-GENERAL STYLES
+GENERAL STYLESHEET
 *********************/
 body {
   color: #323944;
   font-family: Cambria, Times New Roman, Times, serif;
-  font-size: 100%;
+  font-size: 18px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
 
@@ -604,12 +584,7 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 500;
-  /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
-  /* removing text decoration from all headline links */ }
+  font-weight: 500; }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
@@ -814,9 +789,9 @@ a.vcuarts-fallback {
   .no-mediaqueries .vcu-name {
     display: block; }
 
-/* =====================
-   FOOTER
-====================== */
+/*********************
+FOOTER
+*********************/
 .footer {
   zoom: 1; }
   .footer:before, .footer:after {
@@ -826,9 +801,9 @@ a.vcuarts-fallback {
     clear: both; }
 
 @media print {
-  /* =====================
-   PRINT STYLESHEET
-====================== */
+  /*********************
+PRINT STYLESHEET
+*********************/
   * {
     background: transparent !important;
     color: black !important;
