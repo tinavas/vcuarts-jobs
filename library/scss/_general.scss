@@ -39,19 +39,8 @@ body {
 .container {
   overflow: hidden;
   padding: 0 2em;
-}
-
-.col2to1 {
-  .primary {
-    @include breakpoint(1100px){  
-      @include span(first 8 of 12);   
-    }
-  }
-  .secondary {
-    @include clearfix;
-    @include breakpoint(1100px){  
-      @include span(last 4 of 12);
-    }
+  @include breakpoint($breakpoint-mobile) {
+    padding:0 1em;
   }
 }
 

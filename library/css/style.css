@@ -510,25 +510,9 @@ body {
 .container {
   overflow: hidden;
   padding: 0 2em; }
-
-@media (min-width: 1100px) {
-  .col2to1 .primary {
-    width: 65.5172413793%;
-    float: left;
-    margin-right: 3.4482758621%; } }
-
-.col2to1 .secondary {
-  zoom: 1; }
-  .col2to1 .secondary:before, .col2to1 .secondary:after {
-    content: "";
-    display: table; }
-  .col2to1 .secondary:after {
-    clear: both; }
-  @media (min-width: 1100px) {
-    .col2to1 .secondary {
-      width: 31.0344827586%;
-      float: right;
-      margin-right: 0; } }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 1em; } }
 
 .block {
   position: relative;
@@ -792,7 +776,9 @@ VCU BAR
     margin-right: auto;
     height: 34px;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-left: 1em;
+    padding-right: 1em; }
     .vcubar .inner-vcubar:after {
       content: " ";
       display: block;
@@ -857,9 +843,50 @@ FOOTER
     display: table; }
   .footer:after {
     clear: both; }
+  @media (max-width: 767px) {
+    .footer {
+      padding: 1em; } }
   .footer p {
     line-height: 1;
     margin: 0; }
+  .footer .footer-logo {
+    margin-top: 20px; }
+    .footer .footer-logo img {
+      width: 100px;
+      position: absolute; }
+    .footer .footer-logo a {
+      display: inline-block;
+      height: 25px; }
+      .footer .footer-logo a:hover .monotone {
+        opacity: 0; }
+      .footer .footer-logo a:hover .color {
+        opacity: 1; }
+
+.vcuarts:hover .monotone {
+  opacity: 0;
+  -ms-filter: "alpha(Opacity=0)";
+  filter: alpha(opacity=0); }
+
+.vcuarts:hover .color {
+  opacity: 1;
+  -ms-filter: "alpha(Opacity=100)";
+  filter: alpha(opacity=100); }
+
+.vcuarts img {
+  position: absolute;
+  z-index: 12;
+  border: 0; }
+
+.color {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -ms-filter: "alpha(Opacity=0)";
+  filter: alpha(opacity=0); }
+
+.monotone {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
 
 @media print {
   /*********************
