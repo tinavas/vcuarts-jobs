@@ -81,6 +81,10 @@ body {
       margin-bottom:0 !important;
     }
   }
+
+  &:last-child {
+    margin-bottom:2em;
+  }
 }
 
 .bg-color-light-yellow {
@@ -89,4 +93,53 @@ body {
 
 .bg-color-transparent {
   background:none;
+}
+
+p {
+  font-size:1em;
+  margin-bottom:1.5em;
+
+  &.note {
+    background:$light-yellow;
+    padding:20px;
+  }
+
+  i.fa {
+    font-size:0.8em;
+  }
+}
+
+.smallp p {
+  font-size:0.9em !important;
+}
+
+p small {
+  line-height:0.5em;
+  font-size:0.9em;
+}
+
+// get rid of left margin on lists tho
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    list-style-type:square;
+    margin-bottom:1em;
+    margin-left:1em;
+  }
+}
+// aligning these stupid numbers also
+ol {
+  margin-left: 20px;
+  padding-left: 0;
+  li {
+    list-style-type:square;
+    margin-bottom:1em;
+    margin-left:1em;
+  }
+}
+// paragraph and list siblings 
+p + ul, p + ol {
+  margin:0 0 2em 0;
+  padding:0 0 0 0;
 }

@@ -553,12 +553,50 @@ body {
     margin-top: 0 !important; }
   .block .block-content *:last-child {
     margin-bottom: 0 !important; }
+  .block:last-child {
+    margin-bottom: 2em; }
 
 .bg-color-light-yellow {
   background-color: #ffffcc; }
 
 .bg-color-transparent {
   background: none; }
+
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em; }
+  p.note {
+    background: #ffffcc;
+    padding: 20px; }
+  p i.fa {
+    font-size: 0.8em; }
+
+.smallp p {
+  font-size: 0.9em !important; }
+
+p small {
+  line-height: 0.5em;
+  font-size: 0.9em; }
+
+ul {
+  margin-left: 0;
+  padding-left: 0; }
+  ul li {
+    list-style-type: square;
+    margin-bottom: 1em;
+    margin-left: 1em; }
+
+ol {
+  margin-left: 20px;
+  padding-left: 0; }
+  ol li {
+    list-style-type: square;
+    margin-bottom: 1em;
+    margin-left: 1em; }
+
+p + ul, p + ol {
+  margin: 0 0 2em 0;
+  padding: 0 0 0 0; }
 
 /*********************
 LINK STYLES
@@ -584,7 +622,7 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 500; }
+  font-weight: 700; }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
