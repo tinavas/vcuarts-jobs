@@ -549,11 +549,9 @@ body {
     display: table; }
   .block:after {
     clear: both; }
-  .block .block-content p:last-child {
-    margin-bottom: 0 !important; }
-  .block .block-content p:first-child {
+  .block .block-content *:first-child {
     margin-top: 0 !important; }
-  .block .block-content ul:last-child {
+  .block .block-content *:last-child {
     margin-bottom: 0 !important; }
 
 /*********************
