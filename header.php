@@ -40,7 +40,13 @@
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+   <?php 
+    $bg = get_field('background_images', 'option');
+    if ($bg) { $rand_key = array_rand($bg, 1); $rand_bg = $bg[$rand_key]; }
+    $body_background_image = ( $rand_bg ? 'style="background-image:url('.$rand_bg['url'].');"':'');
+   ?>
+
+	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage" <?php echo $body_background_image; ?>>
   <div class="super-container">
   
   <div class="vcubar">
