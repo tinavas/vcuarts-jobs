@@ -7,7 +7,7 @@ $alert-red:         #fbe3e4;
 $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
-$black:             #323944;
+$black:             #000;
 $white:             #fff;
 
 $light-gray:        #f8f9fa;
@@ -28,11 +28,33 @@ $f-red:             #e96763;
 $f-blue:            #d6e1df;
 
 
-$link-color:        $f-red;
+$link-color:        $black;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
+
+//arts.vcu.edu colors
+$off-white: #E8E8CA;
+$orange: #ff9538;
+$bright-orange: #FF8D00;
+$light-green: #7cd58f;
+$very-light-green: #b1e2b8;
+$light-yellow: #ffffcc;
+$yellow: #f7ca4f;
+$purple: #9457a3;
+$bright-purple: #834E88;
+$light-purple: #d3a5de;
+$dark-grey: #444;
+$light-grey: #ccc;
+$very-light-grey: #eee;
+$salmon: #fa7260;
+$light-salmon: #fec1b9;
+$light-blue: #b1dee2;
+$green: #57ab1a;
+$vcuarts-red: #FF1236;
+$teal: #48D1CC;
+$magenta: #FF00FF;
 
 
 /*

@@ -12,7 +12,7 @@
 
           <?php get_sidebar(); ?>
 
-          <div id="main" role="main">
+
 
             <?php
             $args = array( 
@@ -65,7 +65,7 @@
             wp_reset_postdata();
             ?>
 
-          </div>
+
 
         </div>
 

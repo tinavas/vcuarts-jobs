@@ -3,11 +3,11 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-  color: $link-color;
+  color: $salmon;
 
   /* on hover */
   &:hover, &:focus {
-    color: $link-hover;
+    color: $black;
   }
 
   /* on click */

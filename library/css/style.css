@@ -449,22 +449,6 @@ GRID
 /*********************
 TYPE
 *********************/
-p {
-  -ms-word-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -webkit-hyphenate-before: 2;
-  -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig"; }
-
 /*********************
 BUTTONS
 *********************/
@@ -487,47 +471,41 @@ BUTTONS
 GENERAL STYLESHEET
 *********************/
 body {
-  color: #323944;
+  color: #000;
   font-family: Karla, Cambria, Times New Roman, Times, serif;
   font-size: 18px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased; }
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
-.wrap {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .wrap:after {
-    content: " ";
-    display: block;
-    clear: both; }
-
-.inner-content, .inner-footer, .inner-header {
-  max-width: 100%;
+#inner-content, .inner-footer, .inner-header {
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden; }
-  .inner-content:after, .inner-footer:after, .inner-header:after {
+  #inner-content:after, .inner-footer:after, .inner-header:after {
     content: " ";
     display: block;
     clear: both; }
 
-.main {
-  overflow: hidden; }
-
-.article-footer {
-  overflow: hidden; }
+.container {
+  overflow: hidden;
+  padding: 0 2em;
+  flex: 1 0 auto; }
 
 /*********************
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #e96763;
+  color: #fa7260;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #e3403b; }
+    color: #000; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -546,8 +524,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
     text-decoration: none; }
 
 h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em; }
+  font-size: 2.7em;
+  line-height: 1.333em;
+  font-weight: 700; }
 
 h2, .h2 {
   font-size: 1.75em;
@@ -555,7 +534,8 @@ h2, .h2 {
   margin-bottom: 0.375em; }
 
 h3, .h3 {
-  font-size: 1.125em; }
+  font-size: 1.4em;
+  font-weight: 700; }
 
 h4, .h4 {
   font-size: 1.1em;
@@ -573,7 +553,7 @@ HEADER STYLES
 #logo {
   margin: 0.75em 0; }
   #logo a {
-    color: #323944; }
+    color: #000; }
 
 /*********************
 NAVIGATION STYLES

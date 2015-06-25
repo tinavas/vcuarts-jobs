@@ -6,23 +6,21 @@ body {
   color: $black;
   font-family: $serif;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 28px;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.wrap {
-  @include container();
-}
-
-.inner-content, .inner-footer, .inner-header {
-  @include container();
+#inner-content, .inner-footer, .inner-header {
+  @include container($wrapper-width);
   overflow: hidden;
 }
 
-.main {
+.container {
   overflow: hidden;
-}
-
-.article-footer {
-  overflow: hidden;
+  padding: 0 2em;
+  flex:1 0 auto;
 }
