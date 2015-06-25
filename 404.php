@@ -1,40 +1,15 @@
 <?php get_header(); ?>
 
-			<div class="content">
+			<div id="content">
 
-				<div class="inner-content">
+				<div id="inner-content">
 
-					<main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
-						<article id="post-not-found" class="hentry">
-
-							<header class="article-header">
-
-								<h1><?php _e( 'Epic 404 - Article Not Found', 'bonestheme' ); ?></h1>
-
-							</header>
-
-							<section class="entry-content">
-
-								<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></p>
-
-							</section>
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
-							</section>
-
-							<footer class="article-footer">
-
-									<p><?php _e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
-
-							</footer>
-
-						</article>
-
-					</main>
+					<div class="block">
+						<div class="block-content">
+							<h1>Job not found</h1>
+							<h3>Looks like this post has been moved or deleted.</h3>
+						</div>
+					</div>
 
 				</div>
 
