@@ -495,7 +495,7 @@ body {
     z-index: -1; }
 
 #inner-content, .inner-footer, .inner-header {
-  max-width: 1200px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden; }
@@ -787,7 +787,7 @@ VCU BAR
       .vcubar a.vcuarts:hover .arts-color {
         opacity: 1.0; }
   .vcubar .inner-vcubar {
-    max-width: 1200px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     height: 34px;

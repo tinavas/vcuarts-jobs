@@ -10,8 +10,7 @@
         <div id="inner-content">
 
 
-        	<div class="col2to1">
-        		<div class="primary">
+        	
             <?php
             $args = array( 
               'taxonomy' => 'jobs_cat',
@@ -66,15 +65,6 @@
             wp_reset_postdata();
             ?>
 
-          </div>
-         	<div class="secondary">
-         		<div class="block bg-color-transparent">
-         			<div class="block-content">
-         				sidebar
-         			</div>
-         		</div>
-         	</div>
-         </div>
 
         </div>
       </div>

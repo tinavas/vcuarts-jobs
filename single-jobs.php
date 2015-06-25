@@ -9,9 +9,6 @@
 <div id="content">
     <div id="inner-content">
 
-    	<div class="col2to1">
-    		<div class="primary">
-
     			<div class="block">
     				<div class="block-content">  	
 
@@ -28,10 +25,6 @@
 					</div>
 
 					<a href="#" class="apply-link">Apply Now via eJobs</a>
-
-				</div>
-			</div>
-
 
     </div>
   </div>
