@@ -20,7 +20,12 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em;
+  padding-bottom:0.3em;
+
+  &.job-category-title {
+    border-bottom:2px solid $very-light-grey;
+    margin-bottom:1em;
+  }
 }
 
 h3, .h3 {

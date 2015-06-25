@@ -4,6 +4,7 @@ LINK STYLES
 
 a, a:visited {
   color: $salmon;
+  transition: color 0.15s ease-in-out, background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   /* on hover */
   &:hover, &:focus {

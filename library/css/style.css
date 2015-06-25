@@ -554,11 +554,18 @@ body {
   .block .block-content *:last-child {
     margin-bottom: 0 !important; }
 
+.bg-color-light-yellow {
+  background-color: #ffffcc; }
+
+.bg-color-transparent {
+  background: none; }
+
 /*********************
 LINK STYLES
 *********************/
 a, a:visited {
   color: #fa7260;
+  transition: color 0.15s ease-in-out, background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
@@ -589,7 +596,10 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  padding-bottom: 0.3em; }
+  h2.job-category-title, .h2.job-category-title {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 1em; }
 
 h3, .h3 {
   font-size: 1.4em;
@@ -609,7 +619,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 #logo {
-  margin: 0.75em 0 0 0; }
+  margin: 1em 0 0.3em 0; }
   #logo a {
     color: #fff; }
 

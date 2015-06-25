@@ -82,3 +82,11 @@ body {
     }
   }
 }
+
+.bg-color-light-yellow {
+  background-color: rgba( $light-yellow, 1 );
+}
+
+.bg-color-transparent {
+  background:none;
+}

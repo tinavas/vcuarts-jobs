@@ -24,7 +24,7 @@
               <div class="block">
               	<div class="block-content">
 
-                <h2><?php echo $cat->name; ?></h2>
+                <h2 class="job-category-title"><?php echo $cat->name; ?></h2>
 
                 <?php 
                 $args = array(
@@ -68,7 +68,7 @@
 
           </div>
          	<div class="secondary">
-         		<div class="block">
+         		<div class="block bg-color-transparent">
          			<div class="block-content">
          				sidebar
          			</div>
