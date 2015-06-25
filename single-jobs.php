@@ -24,7 +24,14 @@
 						</div>
 					</div>
 
-					<a href="#" class="apply-link">Apply Now via eJobs</a>
+					<?php 
+						$job_url = get_field('job_url');
+						if ($job_url) { 
+					?>
+					
+					<a href="<?php echo $job_url; ?>" class="apply-link">Apply Now</a>
+
+					<?php } ?>
 
     </div>
   </div>
