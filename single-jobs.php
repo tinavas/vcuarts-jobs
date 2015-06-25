@@ -27,6 +27,8 @@
 						</div>
 					</div>
 
+					<a href="#" class="apply-link">Apply Now via eJobs</a>
+
 				</div>
 			</div>
 

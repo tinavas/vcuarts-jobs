@@ -604,11 +604,13 @@ LINK STYLES
 a, a:visited {
   color: #fa7260;
   transition: color 0.15s ease-in-out, background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #000; }
+    color: #000;
+    text-decoration: underline; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -616,6 +618,25 @@ a, a:visited {
     for mobile devices.
     */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+a.apply-link {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background: #fa7260;
+  color: #fff;
+  text-decoration: none;
+  padding: 2em;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  line-height: 1; }
+  a.apply-link:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: inset 0 0 0 5px #000; }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
