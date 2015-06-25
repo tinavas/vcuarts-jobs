@@ -718,10 +718,10 @@ VCU BAR
       .vcubar a.vcuarts:hover .arts-color {
         opacity: 1.0; }
   .vcubar .inner-vcubar {
-    max-width: 100%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    height: 2em;
+    height: 34px;
     position: relative;
     overflow: hidden; }
     .vcubar .inner-vcubar:after {

@@ -42,8 +42,8 @@ VCU BAR
   }
 
   .inner-vcubar{
-    @include container();
-    height: 2em;
+    @include container($wrapper-width);
+    height: 34px;
     position: relative;
     overflow: hidden;
   }
