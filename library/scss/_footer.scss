@@ -4,4 +4,7 @@ FOOTER
 
 .footer {
   @include clearfix;
+  background:$black;
+  color:$white;
+  flex:none;
 }

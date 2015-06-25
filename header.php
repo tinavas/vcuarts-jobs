@@ -41,6 +41,7 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+  <div class="super-container">
   
   <div class="vcubar">
     <div class="inner-vcubar">

@@ -7,13 +7,11 @@
 <?php get_header(); ?>
 
       <div id="content">
-
         <div id="inner-content">
 
-          <?php get_sidebar(); ?>
 
-
-
+        	<div class="col2to1">
+        		<div class="primary">
             <?php
             $args = array( 
               'taxonomy' => 'jobs_cat',
@@ -22,6 +20,9 @@
             if ($categories) : ?>
 
               <?php foreach ($categories as $cat) : ?>
+
+              <div class="block">
+              	<div class="block-content">
 
                 <h2><?php echo $cat->name; ?></h2>
 
@@ -46,12 +47,7 @@
                   while ( $the_query->have_posts() ) : $the_query->the_post();
                     ?>
 
-                    <div class="fs-member">
-
                       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-
-                    </div>
 
                   <?php 
                   endwhile; ?>
@@ -59,16 +55,28 @@
                   </div>
 
                 <?php 
-                endif; //end if cats have posts
+                endif; //end if cats have posts?>
+
+              </div>
+            </div>
+
+                <?php
               endforeach; //end foreach cat
             endif; //end if categories 
             wp_reset_postdata();
             ?>
 
-
+          </div>
+         	<div class="secondary">
+         		<div class="block">
+         			<div class="block-content">
+         				sidebar
+         			</div>
+         		</div>
+         	</div>
+         </div>
 
         </div>
-
       </div>
 
 

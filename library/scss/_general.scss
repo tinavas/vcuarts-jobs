@@ -4,14 +4,27 @@ GENERAL STYLESHEET
 
 body {
   color: $black;
-  font-family: $serif;
+  font-family: $sans-serif;
   font-size: 18px;
   line-height: 28px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  &:after {
+    content: '';
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    background: linear-gradient(rgba($dark-grey, .7),rgba($dark-grey, .4));
+    z-index: -1;
+  }
 }
 
 #inner-content, .inner-footer, .inner-header {
@@ -19,8 +32,54 @@ body {
   overflow: hidden;
 }
 
+.super-container {
+    flex:1 0 auto;
+}
+
 .container {
   overflow: hidden;
   padding: 0 2em;
-  flex:1 0 auto;
+}
+
+.col2to1 {
+  .primary {
+    @include breakpoint(1100px){  
+      @include span(first 8 of 12);   
+    }
+  }
+  .secondary {
+    @include clearfix;
+    @include breakpoint(1100px){  
+      @include span(last 4 of 12);
+    }
+  }
+}
+
+.block{
+  position: relative;
+  border:5px solid $black;
+  padding:50px 25px;
+  background: $white;
+  @include breakpoint($breakpoint-desktop){
+    padding: 50px;
+  }
+  @include breakpoint($breakpoint-mobile) {
+    padding:50px 25px;
+  }
+  @include clearfix;
+  margin-top: 2em;
+  box-sizing: border-box;
+
+  //content inside a block
+  .block-content{
+    p:last-child {
+      margin-bottom: 0 !important;
+    }
+    p:first-child {
+      margin-top:0 !important;
+    }
+    ul:last-child {
+      margin-bottom:0 !important;
+    }
+  }
 }
