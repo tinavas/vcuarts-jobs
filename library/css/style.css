@@ -848,13 +848,18 @@ FOOTER
 .footer {
   zoom: 1;
   background: #000;
-  color: #fff;
-  flex: none; }
+  color: #ccc;
+  font-size: 0.9em;
+  flex: none;
+  padding: 2em; }
   .footer:before, .footer:after {
     content: "";
     display: table; }
   .footer:after {
     clear: both; }
+  .footer p {
+    line-height: 1;
+    margin: 0; }
 
 @media print {
   /*********************

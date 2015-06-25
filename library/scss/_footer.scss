@@ -5,6 +5,13 @@ FOOTER
 .footer {
   @include clearfix;
   background:$black;
-  color:$white;
+  color:$light-grey;
+  font-size:0.9em;
   flex:none;
+  padding:2em;
+  
+  p {
+    line-height:1;
+    margin:0;
+  }
 }
