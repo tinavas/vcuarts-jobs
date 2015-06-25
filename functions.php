@@ -311,42 +311,6 @@ function get_development_scripts(){
 
 }
 
-
-//jobs page id and transient - shoutout to mark
-function get_job_template_id() {
-  if ( false === ( $job_template_id_results = get_transient( 'job_template_id_results' ) ) ) {
-    $args = array(
-      'post_type'  => 'page', 
-      'fields' => 'ids',
-      'meta_query' => array( 
-        array(
-          'key'   => '_wp_page_template', 
-          'value' => 'page-t-jobs.php'
-        )
-      )
-    );
-    $posts = get_posts( $args );
-    $job_template_id_results = $posts[0];
-    set_transient( 'job_template_id_results', $job_template_id_results, 12 * HOUR_IN_SECONDS );
-  }
-
-  return $job_template_id_results;
-}
-
-
-// // Create a simple function to delete our transient
-// function edit_term_delete_transient() {
-//      delete_transient( 'special_query_results' );
-// }
-// // Add the function to the edit_term hook so it runs when categories/tags are edited
-// add_action( 'edit_term', 'edit_term_delete_transient' );
-function update_post_delete_transient() {
-  delete_transient( 'jobs_transient' );
-}
-add_action( 'save_post', 'update_post_delete_transient' );
-
-
-
 // Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(
 		'comment-list',
