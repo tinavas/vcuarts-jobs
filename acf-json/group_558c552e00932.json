@@ -6,7 +6,6 @@
             "key": "field_558c553499463",
             "label": "Job URL",
             "name": "job_url",
-            "prefix": "",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -35,5 +34,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1435260351
+    "modified": 1438882736,
+    "local": "json"
 }

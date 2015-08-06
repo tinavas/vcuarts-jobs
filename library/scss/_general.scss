@@ -27,7 +27,7 @@ body {
   }
 }
 
-#inner-content, .inner-footer, .inner-header {
+.inner-content, .inner-footer, .inner-header {
   @include container($wrapper-width);
   overflow: hidden;
 }
