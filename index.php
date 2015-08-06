@@ -5,7 +5,7 @@
 
         <?php
         $args = array( 
-          'taxonomy' => 'jobs_cat',
+          'taxonomy' => 'category',
         );
         $categories = get_terms( $args );
         if ($categories) : ?>
@@ -19,11 +19,11 @@
 
             <?php 
             $args = array(
-              'post_type' => 'jobs',
+              'post_type' => 'post',
               'posts_per_page' => -1,
               'tax_query' => array(
                 array(
-                  'taxonomy' => 'jobs_cat',
+                  'taxonomy' => 'category',
                   'field'    => 'id',
                   'terms' => $cat->term_id
                 )

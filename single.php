@@ -23,7 +23,7 @@
             if ($job_url) { 
           ?>
           
-          <a href="<?php echo $job_url; ?>" class="apply-link">Apply Now</a>
+            <a href="<?php echo $job_url; ?>" class="apply-link">Apply Now</a>
 
           <?php } ?>
 
