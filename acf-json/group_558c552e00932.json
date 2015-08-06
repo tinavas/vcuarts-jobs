@@ -26,6 +26,13 @@
                 "operator": "==",
                 "value": "jobs"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
         ]
     ],
     "menu_order": 0,
@@ -33,7 +40,9 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
-    "modified": 1438882736,
-    "local": "json"
+    "hide_on_screen": [
+        "featured_image",
+        "tags"
+    ],
+    "modified": 1438886129
 }
