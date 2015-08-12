@@ -53,23 +53,20 @@
     <div class="inner-vcubar">
       <a href="http://vcu.edu" target="_blank" class="vcu"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcu.svg'); ?></a>
       <a href="http://vcu.edu" target="_blank" class="vcu-fallback"></a>
-      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcuarts.svg'); ?></a>
-      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts-fallback"></a>
     </div>
   </div>
 
-		<div class="container">
+	<div class="container">
 
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<div class="inner-header">
+				<span class="vcuarts">
+		      <a href="http://arts.vcu.edu">
+		        <img class="monotone" alt="VCUarts" src="<?php echo get_template_directory_uri(); ?>/library/images/svg/vcuarts.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/library/images/svg/fallbacks/vcuarts-dk.jpg'">
+		        <img class="color" alt="VCUarts" src="<?php echo get_template_directory_uri(); ?>/library/images/svg/vcuarts-hover.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/library/images/svg/fallbacks/vcuarts-dk-hover.jpg'">
+		      </a>
+		    </span>
 
-				<div class="inner-header">
-
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-
-				</div>
-
-			</header>
+    		<h1 id="logo"><a href="<?php echo site_url(); ?>">Jobs</a></h1>
+			</div>
+		</header>

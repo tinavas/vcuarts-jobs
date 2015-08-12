@@ -3,13 +3,37 @@ HEADER STYLES
 *********************/
 
 .header {
+	height:130px;
+	padding-top:50px;
+	@include breakpoint($breakpoint-mobile){
+		height:180px;
+	}
+}
 
+span.vcuarts img {
+	width:230px;
 }
 
 #logo {
-  margin: 1em 0 0.3em 0;
+	margin-top:-1px;
+	margin-left:250px;
 
-  a {
-    color: $white;
-  }
+	@include breakpoint($breakpoint-mobile){
+		margin-left:0;
+		margin-top:60px;
+	}
+
+	a {
+		color: $white;
+		outline:none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
 }
+
+//logo image
+.vcuarts:hover .monotone{opacity:0;-ms-filter:"alpha(Opacity=0)";filter:alpha(opacity=0)}
+.vcuarts:hover .color{opacity:1;-ms-filter:"alpha(Opacity=100)";filter:alpha(opacity=100);}
+.color{opacity:0;-webkit-transition:opacity 0.2s ease-in-out;transition:opacity 0.2s ease-in-out;-ms-filter:"alpha(Opacity=0)";filter:alpha(opacity=0)}
+.monotone{-webkit-transition:opacity 0.2s ease-in-out;transition:opacity 0.2s ease-in-out}
